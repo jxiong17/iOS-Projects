@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="newCell" rowHeight="106" id="KGk-i7-Jjw" customClass="MyCustomTableViewCell" customModule="InClass09" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="106"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="105.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Od8-6o-amC">
+                        <rect key="frame" x="16" y="11" width="288" height="24"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="location" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wVN-Pp-mfP">
+                        <rect key="frame" x="16" y="49" width="288" height="18"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EvK-tN-1hd">
+                        <rect key="frame" x="259" y="71" width="45" height="30"/>
+                        <state key="normal" title="Delete"/>
+                        <connections>
+                            <action selector="deleteButtonClicked:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="SOH-sC-DtB"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Od8-6o-amC" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="7ZY-wY-1NO"/>
+                    <constraint firstItem="EvK-tN-1hd" firstAttribute="top" secondItem="wVN-Pp-mfP" secondAttribute="bottom" constant="4" id="BRO-oT-Snc"/>
+                    <constraint firstItem="Od8-6o-amC" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="Cab-6C-7cF"/>
+                    <constraint firstItem="Od8-6o-amC" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="FaU-jg-VLq"/>
+                    <constraint firstItem="EvK-tN-1hd" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="gKh-f3-xD6"/>
+                    <constraint firstItem="wVN-Pp-mfP" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="gdY-lH-l6I"/>
+                    <constraint firstItem="wVN-Pp-mfP" firstAttribute="top" secondItem="Od8-6o-amC" secondAttribute="bottom" constant="14" id="mjn-Wf-LSo"/>
+                    <constraint firstAttribute="bottom" secondItem="EvK-tN-1hd" secondAttribute="bottom" constant="4.5" id="r43-d6-Ylg"/>
+                    <constraint firstItem="EvK-tN-1hd" firstAttribute="top" secondItem="wVN-Pp-mfP" secondAttribute="bottom" constant="4" id="rZ2-Hj-WXy"/>
+                    <constraint firstItem="wVN-Pp-mfP" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="ttL-ws-42n"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="locationLabel" destination="wVN-Pp-mfP" id="5lH-NS-Eab"/>
+                <outlet property="titleLabel" destination="Od8-6o-amC" id="W4C-br-L9E"/>
+            </connections>
+            <point key="canvasLocation" x="145.59999999999999" y="191.6041979010495"/>
+        </tableViewCell>
+    </objects>
+</document>
